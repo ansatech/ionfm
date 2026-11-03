@@ -70,7 +70,8 @@ main{flex:1;min-width:0;display:flex;flex-direction:column;gap:18px}
 .btn:hover{border-color:#C9CDC4}
 .btn.go{background:var(--lime);border-color:var(--lime);color:#1F340A}
 .btn.go:hover{background:#82B53A}
-.btn.dark{background:var(--head);border-color:var(--head);color:#fff}
+.btn.dark{background:#E7EAE4;border-color:#D6DAD2;color:var(--head)}
+.btn.dark:hover{background:#DEE2DA;border-color:#CBD0C6}
 .btn.sm{height:36px;padding:0 14px;font-size:13px}
 .btn.ghost{border-color:transparent;background:transparent}
 
@@ -662,13 +663,112 @@ textarea.in{font-size:14px;line-height:1.5}
 .dtx{position:absolute;top:3px;right:3px;width:20px;height:20px;border:0;border-radius:6px;background:rgba(255,255,255,.15);color:#fff;display:flex;align-items:center;justify-content:center}
 .dtx .ico{width:12px;height:12px}
 .dt.dragging{opacity:.35}
-.ghost{position:absolute;left:3px;right:3px;border-radius:8px;background:var(--lime);opacity:.85;color:#21360A;font-size:11px;font-weight:800;padding:4px 7px;pointer-events:none;z-index:3}
+.dghost{position:absolute;left:3px;right:3px;border-radius:8px;background:var(--lime);opacity:.85;color:#21360A;font-size:11px;font-weight:800;padding:4px 7px;pointer-events:none;z-index:3}
 .tip{position:fixed;z-index:120;max-width:300px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-size:13px;line-height:1.45;box-shadow:0 14px 34px rgba(0,0,0,.16);pointer-events:none;display:none}
 .tip .tn{font-weight:700;margin-top:4px;color:var(--head)}.tip .tm,.tip .tsite{color:var(--muted);font-size:12.5px}
 .tip .td{margin-top:6px;font-size:12.5px}
 .sbrams{display:flex;align-items:center;gap:12px;margin:0 22px 12px;padding:12px 14px;border-radius:14px;background:var(--amberSoft);color:var(--amberInk);flex-wrap:wrap}
 .sbrams span{flex:1}
 @media (max-width:900px){.sbb{grid-template-columns:1fr}.sbl{max-height:none}.dhd,.dgrid{grid-template-columns:44px repeat(7,minmax(90px,1fr))}.sbr{overflow-x:auto}}
+
+.sbh2>.grow{flex:1;min-width:0}
+.jcard{background:#E7EAE4!important;color:var(--head)!important;border:1px solid #D6DAD2;box-shadow:0 2px 8px rgba(47,49,51,.08)!important;padding:10px 12px 10px 14px!important;gap:3px!important}
+.jc1{margin-bottom:0!important}
+.jccat{color:var(--muted)!important;margin-left:4px!important}
+.jcgrip{margin-left:auto;color:var(--muted);display:flex}.jcgrip .ico{width:15px;height:15px}
+.jc2{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.jcno{font-size:13px!important;color:var(--head)!important;letter-spacing:0!important}
+.jc2 .pri{font-size:12px;color:var(--head)}.jc2 .pri i{width:19px;height:19px;font-size:10px}
+.jcdue{font-size:12px;color:var(--muted)}
+.jccl{font-size:13px!important;color:var(--head)!important}
+.jcaddr{color:var(--muted)!important;font-size:12px!important;margin-top:0!important;line-height:1.35!important}
+.jcm,.jcdrag{display:none!important}
+.dt.mine{background:#E7EAE4!important;border:1px solid #CBD0C6;border-left:4px solid var(--lime)!important;box-shadow:0 3px 10px rgba(47,49,51,.12)!important}
+.dt.mine b{color:var(--muted)!important}.dt.mine .dtn{color:var(--head)!important}
+.dtx{background:rgba(47,49,51,.08)!important;color:var(--head)!important}
+.njfoot{display:flex;justify-content:flex-end;gap:10px;padding:4px 0 8px}
+.wt.on{background:#E7EAE4!important;border-color:#D6DAD2!important;color:var(--head)!important}
+.wx:hover{background:rgba(47,49,51,.08)!important}
+/* softer type on the jobs page */
+main.jobsp{--head:#4A4D50}
+main.jobsp .top h1{color:#3F4245}
+.jt{font-size:13px!important}
+.jt b{font-weight:700;color:#55585B}
+.jt .nm{font-weight:600;color:#4A4D50}
+.cl b{font-weight:600!important}
+
+.savebtn{align-self:flex-end}
+.assr{display:flex;align-items:center;gap:12px;padding:10px 12px;border-top:1px solid var(--line2);cursor:pointer;user-select:none}
+.assr:first-child{border-top:0}
+.assr input{position:absolute;opacity:0;pointer-events:none}
+.assr .bx,.wapr .bx{width:20px;height:20px;border-radius:6px;border:1.5px solid var(--faint);display:inline-flex;align-items:center;justify-content:center;color:transparent;background:var(--card);flex-shrink:0}
+.assr .bx .ico,.wapr .bx .ico{width:13px;height:13px;stroke-width:3}
+.assr.on{background:#FAFCF6}.assr.on .bx,.wapr.on .bx{background:var(--limeDeep);border-color:var(--limeDeep);color:#fff}
+.assr:focus-within{outline:2px solid var(--limeDeep);outline-offset:-2px}
+.assr .grow{flex:1;min-width:0}.assr b{display:block;font-size:13.5px}.assr small{font-size:12px;color:var(--muted)}
+.afreq{font-size:12px;font-weight:600;color:var(--muted);white-space:nowrap}
+.anext{font-size:12px;font-weight:700;color:var(--head);white-space:nowrap;min-width:140px;text-align:right}
+.anext.over{color:var(--redInk)}
+.waconn{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:14px;background:#E9F7EE;color:#17713E;margin-bottom:12px}
+.waconn .grow{flex:1}.waconn b{display:block;font-size:13.5px;color:#14522F}.waconn small{font-size:12px}
+.wadot{width:9px;height:9px;border-radius:50%;background:#25B35A;box-shadow:0 0 0 3px #C8EED5}
+.wacreate{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1.5px dashed var(--line);border-radius:14px}
+.wacreate .grow{flex:1;min-width:0}.wacreate small{display:block;font-size:12px;color:var(--muted)}.wacreate b{font-size:14px}
+.wagroup{border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.wagh{display:flex;align-items:center;gap:10px}.wagh .grow{flex:1;min-width:0}.wagh b{display:block;font-size:14px}.wagh small{font-size:12px;color:var(--muted)}
+.waic{width:36px;height:36px;border-radius:50%;background:#E9F7EE;color:#17713E;display:flex;align-items:center;justify-content:center}
+.wam{display:flex;flex-wrap:wrap;gap:6px}
+.wachip{display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 6px 0 3px;border-radius:999px;background:var(--soft);font-size:13px;font-weight:600;color:var(--head)}
+.wachip.you{padding-right:12px;background:var(--limeSoft);color:var(--limeInk)}
+.wachip .av.sm{width:28px;height:28px;font-size:10px}
+.wx2{width:22px;height:22px;border:0;border-radius:50%;background:transparent;color:var(--muted);display:flex;align-items:center;justify-content:center}
+.wx2:hover{background:var(--card);color:var(--head)}.wx2 .ico{width:12px;height:12px}
+.wapick{border-top:1px solid var(--line2);padding-top:10px;display:flex;flex-direction:column;gap:2px}
+.wapr{display:flex;align-items:center;gap:10px;border:0;background:transparent;padding:7px 8px;border-radius:10px;text-align:left;color:var(--head)}
+.wapr:hover{background:var(--soft)}.wapr[disabled]{opacity:.4;cursor:not-allowed}
+.wapr .grow{flex:1}.wapr b{display:block;font-size:13.5px}.wapr small{font-size:12px;color:var(--muted)}
+.walim{font-size:12px;color:var(--muted);padding:6px 8px 0}
+
+.jcard .jcaddr{display:block!important;white-space:normal}
+.jc2{margin-top:4px}
+.jcgrip{display:none!important}
+.dt .dtno{font-size:10px;font-weight:700;color:var(--muted)}
+.dt .dtn{font-size:11.5px}
+.dt .dts{white-space:normal!important;overflow:visible;text-overflow:clip;line-height:1.25}
+.dt.locked{cursor:default}
+.dlock{position:absolute;right:5px;bottom:4px;color:var(--muted);display:flex}.dlock .ico{width:13px;height:13px}
+.dnote{display:flex;gap:4px;align-items:flex-start;font-size:10.5px;color:var(--head);background:rgba(255,255,255,.75);border-radius:5px;padding:2px 5px;margin:1px 0;white-space:normal}
+.dnote .ico{width:11px;height:11px;margin-top:1px;flex-shrink:0;color:var(--limeInk)}
+.clash{display:flex;align-items:center;gap:10px;margin:0 22px 12px;padding:10px 12px 10px 14px;border-radius:14px;background:var(--amberSoft);color:var(--amberInk);font-size:13px}
+.clash .ct{flex:1 1 auto;min-width:0;white-space:normal}.clash .btn{flex-shrink:0}.clash>.ico{flex-shrink:0}
+.menu.ctx{position:fixed;z-index:130;min-width:200px}
+.menu.ctx button .ico{width:16px;height:16px;color:var(--muted)}
+.menu.ctx button.danger{color:var(--redInk)}.menu.ctx button.danger .ico{color:var(--redInk)}
+.menu.ctx button[disabled]{opacity:.4;cursor:not-allowed}
+.notepop{padding:12px;width:300px;display:flex;flex-direction:column;gap:8px}
+.notepop b{font-size:13px}
+.notepop .np{display:flex;justify-content:flex-end;gap:8px}
+.jcard,.sbbox{flex-shrink:0}
+
+.sbbh2{display:flex;align-items:center;flex-wrap:wrap;gap:6px 8px;padding:6px 8px 6px 10px;min-width:0}
+.sbbh2 .btn.sm{margin-left:auto;flex-shrink:0;padding:0 9px}
+.sbbox{min-width:0;overflow:hidden}
+.selall{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;color:var(--muted);cursor:pointer}
+.sbbh2 .btn.sm{height:30px;font-size:12.5px;color:var(--redInk)}.sbbh2 .btn .ico{width:14px;height:14px}
+.pb input[type=checkbox]{flex-shrink:0}
+.pb b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pb .grow{min-width:0}
+.selall span{white-space:nowrap}
+.pb.psel{box-shadow:inset 0 0 0 1.5px var(--limeDeep)}
+.mbox.sbm2{position:relative}
+.clashw{position:absolute;top:78px;right:22px;z-index:30}
+.clash{display:block!important;width:340px;max-height:230px;overflow:auto;box-shadow:0 12px 30px rgba(47,49,51,.16);border:1px solid #F3D3A0;margin:0!important;padding:10px 12px!important;border-radius:14px;background:var(--amberSoft);color:var(--amberInk);font-size:12px!important}
+.clh{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.clh .ico{width:15px;height:15px}.clh b{flex:1;font-size:12.5px;color:var(--amberInk)}
+.clh .btn.sm{height:28px;padding:0 10px;font-size:12px;background:transparent;border-color:#E2B66E;color:var(--amberInk)}
+.clh .btn.sm:hover{background:rgba(255,255,255,.5)}
+.cli{display:flex;flex-direction:column;padding:4px 0 4px 23px;border-top:1px solid rgba(138,82,8,.14)}
+.clw{font-weight:700;font-size:11.5px}.clj{font-size:12px;color:#6B4510}
 </style>
 </head>
 <body>
@@ -802,7 +902,7 @@ let JOBS = [
 ];
 
 const NAMES={1201:'Zone 3 fault',1199:'Shutter motor tripping',1196:'Barrier arm fault',1197:'Chapel MCP',1189:'Pest brush strip',1195:'Stairwell lighting',1190:'Inner door sensors',1198:'Cable and brake repair',1188:'Plant room shutter',1192:'12-month door PPM',1193:'Shutter repair',1200:'Weekly alarm test',1185:'Intruder alarm service',1184:'EL duration test',1183:'EICR',1191:'CCTV annual service',1194:'Fire door inspection',1186:'Car park CCTV',1180:'Part 6 install, 12 flats',1187:'Return visit',1182:'EL monthly test',1181:'PAT testing',1179:'Parking fobs',1177:'Extinguisher service',1176:'Out-of-hours make safe',1174:'AICO install',1173:'Parking fobs',1168:'6-month door PPM'};
-const SCHED={1201:H(1),1199:D(0,7),1189:D(0,13),1195:D(0,8),1198:D(1,9),1188:D(4,8),1192:D(4,8),1193:D(4,8),1200:D(0,10),1191:D(3,9),1194:D(0,8),1186:D(2,8),1180:D(-3,8),1187:D(-3,9),1182:D(-3,8),1181:D(-6,9),1179:D(-13,10),1177:D(-9,9),1176:H(-24*28+1),1174:D(-18,8),1173:D(-21,11),1168:D(-101,8)};
+const SCHED={1201:H(1),1199:D(0,7),1189:D(0,13),1195:D(0,8),1198:D(1,9),1188:D(4,8),1192:D(3,8),1193:D(3,13),1200:D(0,10),1191:D(3,9),1194:D(0,8),1186:D(2,8),1180:D(-3,8),1187:D(-3,9),1182:D(-3,8),1181:D(-6,9),1179:D(-13,10),1177:D(-9,9),1176:H(-24*28+1),1174:D(-18,8),1173:D(-21,11),1168:D(-101,8)};
 const MULTI={1188:['JM','KD'],1180:['JM','LS','DP'],1186:['LS','RH']};
 JOBS.forEach(j=>{j.name=NAMES[j.no]||'';j.sched=SCHED[j.no]||null;j.engs=MULTI[j.no]||(j.eng?[j.eng]:[]);delete j.eng;});
 
@@ -841,7 +941,7 @@ const PLACE = {
  clients:['Clients & sites','Page 10 in the build order.',['Invoice rules per client: refs, invoice email, CIS','Sites with access notes and hours']]
 };
 
-const S = {page:'jobs',tab:'all',lastSel:null,type:'all',client:'',eng:'',q:'',attn:'',sort:'target',dir:1,sel:new Set()};
+const S = {page:'jobs',tab:'all',lastSel:null,type:'all',client:'',eng:'',q:'',attn:'',sort:'no',dir:-1,sel:new Set()};
 
 /* time helpers */
 const DAYS=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -1022,7 +1122,7 @@ function renderPlace(){
   </div></section>`;
 }
 
-function render(){if(S.page==='newjob'&&!NJ)S.page='jobs';document.body.classList.toggle('wide',S.page==='newjob');renderNav();S.page==='jobs'?renderJobs():S.page==='newjob'?renderNewJob():renderPlace();_afterRender();}
+function render(){document.getElementById('main').classList.toggle('jobsp',S.page==='jobs');if(S.page==='newjob'&&!NJ)S.page='jobs';document.body.classList.toggle('wide',S.page==='newjob');renderNav();S.page==='jobs'?renderJobs():S.page==='newjob'?renderNewJob():renderPlace();_afterRender();}
 
 /* notifications */
 function renderNotif(){
@@ -1294,7 +1394,7 @@ function addressesFor(pc){
   return [`Unit 1, ${st[0]}`,`Unit 4, ${st[0]}`,`12 ${st[0]}`,`2 ${st[1]||st[0]}`,`17 ${st[1]||st[0]}`].map(a=>({line1:a,town,pc}));
 }
 
-const NJF=()=>({client:'',site:'',contact:'',name:'',type:'call',cat:'',ref:'',ref2:'',nte:'',desc:'',notes:'',siteContact:'',pri:3,
+const NJF=()=>({client:'',site:'',contact:[],siteContacts:[],newSiteContact:null,assets:[],newAsset:null,wa:null,waPick:false,quoted:'',name:'',type:'call',cat:'',ref:'',ref2:'',nte:'',desc:'',notes:'',siteContact:'',pri:3,
   resp:'',arr:'',comp:'',target:'',targetTouched:false,rams:false,engs:[],vdate:'',vtime:'',
   newClient:null,newSite:null,newContact:null,addrList:null,filled:{},doc:null,docView:0,scanning:false,found:[],invoiceNote:'',docs:[],siteAddr:'',sitePc:'',internal:'',vend:'12:00',book:[]});
 let NJ=null;            // the open new-job tab (null when closed)
@@ -1334,13 +1434,13 @@ function renderNewJob(){
   const cOpts=contacts.map((c,i)=>({v:String(i),l:c.name,sub:[c.role,c.email].filter(Boolean).join(', ')}));
   const engOpts=Object.entries(ENG).map(([k,e])=>({v:k,l:e.name,pre:`<span class="av sm" style="background:${e.c}">${k}</span>`}));
   const catOpts=CATS.map(c=>({v:c,l:c}));
-  const contact=n.newContact||(n.contact!==''?contacts[+n.contact]:null);
+  const contact=n.contact.length?contacts[+n.contact[0]]:null;
   const ty=(k,l,i)=>`<button type="button" class="${n.type===k?'on':''}" data-njtype="${k}">${ic(i)}${l}</button>`;
   document.getElementById('main').innerHTML=`
   ${wsTabs()}
   <div class="njhead">
     <div><h1>New job <span class="num">JOB-${no}</span></h1><p>Upload the works order to fill this in, or type it yourself.</p></div>
-    <div class="row-r"><button class="btn" data-closetab="nj">Cancel</button><button class="btn dark" id="njCreate">${ic('check')}Create job</button></div>
+    <div class="row-r"><button class="btn" data-closetab="nj">Cancel</button><button class="btn go" id="njCreate">${ic('check')}Create job</button></div>
   </div>
   <div class="nj">
     <div class="njl">
@@ -1349,11 +1449,9 @@ function renderNewJob(){
         <div class="ng">
           ${field('Client',n.newClient?newClientBox():dd('client',{value:n.client,opts:clientOpts,placeholder:'Choose a client',search:true,add:'New client'}),{k:'client',req:1})}
           ${field('Site',n.newSite?newSiteBox():dd('site',{value:n.site,opts:sitesOf(n.client),placeholder:n.client?'Choose a site':'Choose a client first',search:true,add:n.client||n.newClient?'New site':null}),{k:'site',req:1})}
-          ${field('Client contact',n.newContact?newContactBox():dd('contact',{value:n.contact,opts:cOpts,placeholder:n.client?'Choose a contact':'Choose a client first',add:n.client||n.newClient?'New contact':null}),{k:'contact',hint:'Gets job emails'})}
-          ${field('Site contact on the day',inp('siteContact','e.g. Dannie Stephens, 07970 754119'),{k:'siteContact',hint:'Optional'})}
+          ${field('Client contact',n.newContact?newContactBox():dd('contact',{value:n.contact,multi:true,opts:cOpts,placeholder:n.client||n.newClient?'Choose contacts':'Choose a client first',add:n.client||n.newClient?'New contact':null}),{k:'contact',hint:'Gets job emails, pick one or more'})}
+          ${field('Site contact on the day',n.newSiteContact?newSiteContactBox():dd('scon',{value:n.siteContacts,multi:true,opts:(SITE_CONTACTS[siteKey()]||[]).map((c,i)=>({v:String(i),l:c.name,sub:[c.role,c.phone].filter(Boolean).join(', ')})),placeholder:siteKey()?'Choose site contacts':'Choose a site first',add:siteKey()?'New site contact':null}),{k:'scon',hint:'Saved against the site'})}
         </div>
-        ${contact&&contact.email?`<div class="njnote">${ic('mail')}<span>Job confirmations and the completion pack will be emailed to <b>${esc(contact.name)}</b> at ${esc(contact.email)}.</span></div>`:contact?`<div class="njnote amber">${ic('mail')}<span>No email saved for ${esc(contact.name)}. Add one so job emails can go out automatically.</span></div>`:''}
-        ${n.invoiceNote?`<div class="njnote">${ic('inv')}<span>${esc(n.invoiceNote)}</span></div>`:''}
       </section>
 
       <section class="card njc">
@@ -1364,14 +1462,16 @@ function renderNewJob(){
           ${field('Category',dd('cat',{value:n.cat,opts:catOpts,placeholder:'Choose a category',search:true}),{k:'cat',hint:'Sets the certificate the engineer fills in',req:1})}
           ${field('Client order no.',inp('ref','e.g. PO 3500549815 or WO 361078170'),{k:'ref',hint:'PO or WO'})}
           ${field('Client job reference',inp('ref2','e.g. Job order 00050599'),{k:'ref2',hint:'Optional'})}
-          ${field('Spend limit',`<label class="money">£<input class="in" data-nj="nte" inputmode="decimal" value="${esc(n.nte)}" placeholder="0.00"></label>`,{k:'nte',hint:'Not to exceed'})}
-          ${field('What needs doing',`<textarea class="in" data-nj="desc" rows="3" placeholder="e.g. Replace the MCP in the chapel">${esc(n.desc)}</textarea>`,{k:'desc',full:1,req:1})}
+          ${n.type==='project'?field('Quoted cost',`<label class="money">£<input class="in" data-nj="quoted" inputmode="decimal" value="${esc(n.quoted)}" placeholder="0.00"></label>`,{k:'quoted',hint:'From the accepted quote'}):field('Spend limit',`<label class="money">£<input class="in" data-nj="nte" inputmode="decimal" value="${esc(n.nte)}" placeholder="0.00"></label>`,{k:'nte',hint:'Not to exceed'})}
+          ${field('Works description',`<textarea class="in" data-nj="desc" rows="3" placeholder="e.g. Replace the MCP in the chapel">${esc(n.desc)}</textarea>`,{k:'desc',full:1,req:1})}
           ${field('Notes for the engineer',`<textarea class="in" data-nj="notes" rows="2" placeholder="Access, keys, location on site">${esc(n.notes)}</textarea>`,{k:'notes',full:1,hint:'Shown on the mobile app'})}
           ${field('Internal notes',`<textarea class="in internal" data-nj="internal" rows="2" placeholder="e.g. Client slow to pay, chase PO before booking">${esc(n.internal)}</textarea>`,{full:1,hint:'Office staff only. Never shown to engineers or clients'})}
         </div>
       </section>
 
-      <section class="card njc">
+      ${n.type==='service'?assetsCard():''}${n.type==='project'?waCard():''}
+      ${n.type==='project'?`<section class="card njc"><h2>Requirements</h2><div class="toggle ${n.rams?'on':''}" data-njrams role="switch" aria-checked="${n.rams}" tabindex="0"><span class="sw"></span><span><b>RAMS required before attendance</b><small>Booking a visit will ask if they've been sent</small></span></div></section>`:''}
+      <section class="card njc" ${n.type==='project'?'hidden':''}>
         <h2>Priority and deadlines</h2>
         <div class="pseg big">${[1,2,3,4].map(p=>`<button type="button" class="${n.pri===p?'on':''} ${n.filled.pri&&n.pri===p?'filledb':''}" data-njpri="${p}"><span class="pri p${p}"><i>P${p}</i>${PRI[p].l}</span><small>${PRI[p].sla}</small></button>`).join('')}</div>
         ${n.cpri?`<p class="njsub">Client priority from the works order: <b>${esc(n.cpri)}</b></p>`:''}
@@ -1385,7 +1485,7 @@ function renderNewJob(){
 
       <section class="card njc">
         <div class="njch"><div><h2>Schedule</h2><p>Book engineer(s) to attend. <span>Optional, can be booked later from the schedule.</span></p></div><div class="njbtns"><button type="button" class="btn sm" id="schedBtn">${ic('cal')}Open schedule</button><button type="button" class="btn sm" id="etaBtn">${ic('mail')}Email ETA</button></div></div>
-        ${n.book.length?`<div class="bkl">${n.book.map((b,i)=>`<div class="bkr"><span class="av" style="background:${ENG[b.eng].c}">${b.eng}</span><div class="grow"><b>${ENG[b.eng].name}</b><small>${fullDate(new Date(b.date+'T12:00'))}</small></div><span class="bkt2">${ic('clock')}${b.start} to ${b.end}</span><button type="button" class="circ sm" data-unbook="${i}" aria-label="Remove ${ENG[b.eng].name}">${ic('x')}</button></div>`).join('')}
+        ${n.book.length?`<div class="bkl">${n.book.map((b,i)=>`<div class="bkr"><span class="av" style="background:${ENG[b.eng].c}">${b.eng}</span><div class="grow"><b>${ENG[b.eng].name}</b><small>${fullDate(new Date(b.date+'T12:00'))}</small></div><span class="bkt2">${ic('clock')}${b.start} to ${b.end}</span><button type="button" class="btn sm" data-editbook="${i}">Edit</button><button type="button" class="circ sm" data-unbook="${i}" aria-label="Remove ${ENG[b.eng].name}">${ic('x')}</button></div>`).join('')}
           <button type="button" class="addeng" id="schedBtn2">${ic('plus')}Add another engineer or visit</button></div>`
         :`<div class="ng three">
           ${field('Engineer(s)',dd('engs',{value:n.engs,opts:engOpts,multi:true,placeholder:'Assign later'}))}
@@ -1405,6 +1505,7 @@ function renderNewJob(){
           <button type="button" class="circ sm" data-docdel="${i}" aria-label="Remove ${esc(d.name)}">${ic('x')}</button></div>`).join('')}</div>`
         :`<div class="docsempty">No documents yet. Upload the works order on the right and it will be saved here, or add RAMS, drawings and photos with Upload.</div>`}
       </section>
+      <div class="njfoot"><button class="btn" data-closetab="nj">Cancel</button><button class="btn go" data-create="1">${ic('check')}Create job</button></div>
     </div>
 
     <aside class="njr">${docPanel()}</aside>
@@ -1429,6 +1530,7 @@ function newContactBox(){const c=NJ.newContact;return `<div class="newbox">
   <div class="nbh"><b>New contact</b><button type="button" class="linkb" data-cancelnew="contact">Cancel</button></div>
   <input class="in" data-nco="name" value="${esc(c.name)}" placeholder="Full name">
   <div class="two"><input class="in" data-nco="email" value="${esc(c.email)}" placeholder="Email"><input class="in" data-nco="phone" value="${esc(c.phone)}" placeholder="Phone"></div>
+  <button type="button" class="btn sm go savebtn" data-savenew="contact">${ic('check')}Save contact</button>
 </div>`;}
 
 const SAMPLE_LABELS={gopuff:'goPuff via Rothwell',vinci:'VINCI',lcc:'Liverpool City Council',sw:'Stevenson Whyte',eft:'EFT Systems',hesis:'HESIS',x1:'X1'};
@@ -1529,8 +1631,10 @@ function applyRead(F){
     else if(F.siteName||F.addr1){n.newSite={name:F.siteName||'',pc:F.postcode||'',line1:F.addr1||'',town:F.town||'',hours:F.hours||''};n.filled.site=true;n.site='';}
   }
   if(F.contact){const list=CONTACTS[F.client]||(CONTACTS[F.client]=[]);let i=list.findIndex(c=>c.email&&c.email.toLowerCase()===F.contact.email.toLowerCase()||c.name===F.contact.name);
-    if(i<0){list.push({name:F.contact.name,role:'',email:F.contact.email,phone:''});i=list.length-1;}fill('contact',String(i));}
-  ['name','type','cat','ref','ref2','desc','notes','siteContact','cpri','invoiceNote'].forEach(k=>fill(k,F[k]));
+    if(i<0){list.push({name:F.contact.name,role:'',email:F.contact.email,phone:''});i=list.length-1;}n.contact=[String(i)];n.filled.contact=true;}
+  ['name','type','cat','ref','ref2','desc','notes','cpri','invoiceNote'].forEach(k=>fill(k,F[k]));
+  {const key=siteKey();if(key){const list=SITE_CONTACTS[key]||(SITE_CONTACTS[key]=[]);if(F.siteContact){const [nm,ph]=F.siteContact.split(/,\s*/);let i=list.findIndex(c=>c.name===nm);if(i<0){list.push({name:nm,phone:ph||'',role:'From works order'});i=list.length-1;}n.siteContacts=[String(i)];n.filled.scon=true;}else if(list.length)n.siteContacts=['0'];}}
+  preselectAssets();
   if(F.ref==='Email request'){n.ref='';delete n.filled.ref;}
   if(F.nte!=null){n.nte=String(F.nte);n.filled.nte=true;}
   if(F.pri){n.pri=F.pri;n.filled.pri=true;}
@@ -1554,19 +1658,22 @@ function createJob(){
   const n=NJ;const err=[];
   if(!n.client&&!(n.newClient&&n.newClient.name))err.push('client');
   if(!n.site&&!(n.newSite&&n.newSite.name))err.push('site');
-  if(!n.desc.trim())err.push('description');
+  if(!n.desc.trim())err.push('works description');
   if(!n.cat)err.push('category');
   if(err.length){toast(`Add the ${err.join(', ')} to create the job`);return;}
   let client=n.client;
   if(n.newClient){client=n.newClient.name.trim();CLIENTS[client]=CLIENTS[client]||[];}
   let site=n.site;
   if(n.newSite){site=`${n.newSite.name.trim()}, ${n.newSite.pc.toUpperCase().trim()}`.replace(/, $/,'');(CLIENTS[client]=CLIENTS[client]||[]).push(site);}
-  if(n.newContact&&n.newContact.name){(CONTACTS[client]=CONTACTS[client]||[]).push({...n.newContact,role:''});}
+  if(n.newContact&&n.newContact.name)saveNew('contact');
+  if(n.newClient&&CONTACTS['__newclient']){CONTACTS[client]=CONTACTS['__newclient'];delete CONTACTS['__newclient'];}
+  if(n.newSite&&SITE_CONTACTS['__newsite']){SITE_CONTACTS[site]=SITE_CONTACTS['__newsite'];delete SITE_CONTACTS['__newsite'];}
+  if(n.newSite&&ASSETS['__newsite']){ASSETS[site]=ASSETS['__newsite'];delete ASSETS['__newsite'];}
   const no=nextNo();const t=new Date(njTarget());
   let sched=null;if(n.vdate){sched=new Date(n.vdate+'T'+(n.vtime||'08:00'));}
   JOBS.push({no,name:n.name.trim(),cl:client,site,ref:n.ref.trim()||'None',type:n.type,cat:n.cat,d:n.desc.trim(),pri:n.pri,cpri:n.cpri||null,c:new Date(NOW),t,
-    st:n.engs.length?'allocated':'new',engs:[...n.engs],sched,docs:n.docs,rams:n.rams,ramsDone:false,wa:n.type==='project',nte:n.nte!==''?parseFloat(n.nte):undefined});
-  NJ=null;openDD=null;S.page='jobs';Object.assign(S,{tab:'all',attn:'',q:'',type:'all',client:'',eng:'',sort:'target',dir:1});
+    st:n.engs.length?'allocated':'new',engs:[...n.engs],sched,docs:n.docs,rams:n.rams,ramsDone:false,wa:!!n.wa,waGroup:n.wa,assets:[...n.assets],quoted:n.quoted,nte:n.type!=='project'&&n.nte!==''?parseFloat(n.nte):undefined});
+  NJ=null;openDD=null;S.page='jobs';Object.assign(S,{tab:'all',attn:'',q:'',type:'all',client:'',eng:'',sort:'no',dir:-1});
   document.body.classList.remove('wide');render();window.scrollTo(0,0);toast(`JOB-${no} created`);
   requestAnimationFrame(()=>{const r=document.querySelector(`tr[data-job="${no}"]`);if(r){r.scrollIntoView({block:'center',behavior:'smooth'});r.classList.add('sel');setTimeout(()=>r.classList.remove('sel'),1800);}});
 }
@@ -1576,9 +1683,12 @@ function closeNewJob(){NJ=null;openDD=null;if(S.page==='newjob')S.page='jobs';re
 /* ---- events for the page ---- */
 function setDD(key,v){
   const n=NJ;
-  if(key==='client'){if(n.client!==v){n.client=v;n.site='';n.contact='';n.newSite=null;n.newContact=null;delete n.filled.client;}const s=sitesOf(v);if(s.length===1)n.site=s[0].v;}
-  else if(key==='site'){n.site=v;delete n.filled.site;}
-  else if(key==='contact'){n.contact=v;delete n.filled.contact;}
+  if(key==='client'){if(n.client!==v){n.client=v;n.site='';n.contact=(CONTACTS[v]||[]).length===1?['0']:[];n.siteContacts=[];n.newSite=null;n.newContact=null;delete n.filled.client;}const s=sitesOf(v);if(s.length===1){n.site=s[0].v;n.siteContacts=(SITE_CONTACTS[n.site]||[]).length?['0']:[];preselectAssets();}}
+  else if(key==='site'){n.site=v;delete n.filled.site;n.siteContacts=(SITE_CONTACTS[v]||[]).length?['0']:[];n.assets=[];preselectAssets();}
+  else if(key==='contact'){n.contact=n.contact.includes(v)?n.contact.filter(x=>x!==v):[...n.contact,v];delete n.filled.contact;return 'keep';}
+  else if(key==='scon'){n.siteContacts=n.siteContacts.includes(v)?n.siteContacts.filter(x=>x!==v):[...n.siteContacts,v];delete n.filled.scon;return 'keep';}
+  else if(key==='natype'){n.newAsset.type=v;}
+  else if(key==='nafreq'){n.newAsset.freq=v;}
   else if(key==='cat'){n.cat=v;delete n.filled.cat;}
   else if(key==='engs'){n.engs=n.engs.includes(v)?n.engs.filter(x=>x!==v):[...n.engs,v];return 'keep';}
   else if(key==='ttime'){setTarget(null,v);}
@@ -1593,19 +1703,21 @@ document.addEventListener('click',e=>{
   if(opt){e.stopPropagation();const r=setDD(opt.dataset.ddv,opt.dataset.v);if(r!=='keep'){openDD=null;ddQ='';}render();return;}
   const add=t.closest('[data-ddadd]');
   if(add){e.stopPropagation();const k=add.dataset.ddadd;openDD=null;ddQ='';
-    if(k==='client'){NJ.newClient={name:'',email:'',terms:'30 days'};NJ.client='';NJ.site='';NJ.newSite={name:'',pc:'',line1:'',town:'',hours:''};NJ.contact='';NJ.newContact={name:'',email:'',phone:''};}
+    if(k==='client'){NJ.newClient={name:'',email:'',terms:'30 days'};NJ.client='';NJ.site='';NJ.newSite={name:'',pc:'',line1:'',town:'',hours:''};NJ.contact=[];NJ.newContact=null;NJ.siteContacts=[];}
     if(k==='site'){NJ.newSite={name:'',pc:'',line1:'',town:'',hours:''};NJ.site='';}
-    if(k==='contact'){NJ.newContact={name:'',email:'',phone:''};NJ.contact='';}
+    if(k==='contact'){NJ.newContact={name:'',email:'',phone:''};}
+    if(k==='scon'){NJ.newSiteContact={name:'',phone:'',role:''};}
+    if(k==='natype'){}
     render();setTimeout(()=>document.querySelector(k==='client'?'[data-nc="name"]':k==='site'?'[data-ns="name"]':'[data-nco="name"]')?.focus(),0);return;}
   if(openDD&&!t.closest('.dd')){openDD=null;ddQ='';render();}
   const cn=t.closest('[data-cancelnew]');if(cn){const k=cn.dataset.cancelnew;if(k==='client'){NJ.newClient=null;NJ.newSite=null;NJ.newContact=null;}if(k==='site'){NJ.newSite=null;NJ.addrList=null;}if(k==='contact')NJ.newContact=null;render();return;}
   if(t.closest('#findAddr')){const pc=(NJ.newSite.pc||'').toUpperCase().trim();if(!/^[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}$/.test(pc)){toast('Enter a full postcode, e.g. L5 5PH');return;}NJ.newSite.pc=pc.replace(/^(\S+?)(\d[A-Z]{2})$/,'$1 $2');NJ.addrList=addressesFor(NJ.newSite.pc);render();return;}
   const ad=t.closest('[data-addr]');if(ad){const a=NJ.addrList[+ad.dataset.addr];Object.assign(NJ.newSite,{line1:a.line1,town:a.town});NJ.addrList=null;render();return;}
-  const nt=t.closest('[data-njtype]');if(nt){NJ.type=nt.dataset.njtype;delete NJ.filled.type;render();return;}
+  const nt=t.closest('[data-njtype]');if(nt){NJ.type=nt.dataset.njtype;delete NJ.filled.type;preselectAssets();render();return;}
   const np=t.closest('[data-njpri]');if(np){NJ.pri=+np.dataset.njpri;delete NJ.filled.pri;render();return;}
   if(t.closest('[data-njrams]')){NJ.rams=!NJ.rams;delete NJ.filled.rams;render();return;}
   const ct=t.closest('[data-closetab]');if(ct){e.stopPropagation();closeNewJob();return;}
-  if(t.closest('#njCreate')){createJob();return;}
+  if(t.closest('#njCreate,[data-create]')){createJob();return;}
   const sm=t.closest('[data-sample]');if(sm){ingest(sampleDoc(sm.dataset.sample));return;}
   if(t.closest('#docReplace')){document.getElementById('docIn').click();return;}
   if(t.closest('#docRemove')){NJ.doc=null;NJ.found=[];NJ.filled={};render();return;}
@@ -1642,7 +1754,7 @@ const MONL=['January','February','March','April','May','June','July','August','S
 const DAYL=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 const fullDate=d=>`${DAYL[d.getDay()]} ${ORD(d.getDate())} ${MONL[d.getMonth()]} ${d.getFullYear()}`;
 function etaDraft(){
-  const n=NJ;const contacts=CONTACTS[n.client]||[];const c=n.newContact||(n.contact!==''?contacts[+n.contact]:null);
+  const n=NJ;const contacts=CONTACTS[clientKey()]||[];const sel=n.contact.map(i=>contacts[+i]).filter(Boolean);const c=sel[0]||null;
   let siteName='',addr='',pc='';
   if(n.newSite){siteName=n.newSite.name;addr=[n.newSite.line1,n.newSite.town].filter(Boolean).join(', ');pc=n.newSite.pc;}
   else if(n.site){const i=n.site.lastIndexOf(', ');siteName=n.site.slice(0,i);pc=n.site.slice(i+2);addr=n.siteAddr||SITE_ADDR[n.site]||'';}
@@ -1650,7 +1762,7 @@ function etaDraft(){
   const first=c?c.name.split(' ')[0]:'';
   const date=n.vdate?fullDate(new Date(n.vdate+'T12:00')):null;
   const body=`Hi ${first||'there'},\n\nWe will be attending site on ${date||'[visit date]'}.\n\nIf you require any more information before the engineer attends please let us know.\n\nThanks,\n\nION Group`;
-  return {to:c&&c.email||'',toName:c?c.name:'',subject,body,date};
+  return {to:sel.map(x=>x.email).filter(Boolean).join(', '),toName:c?c.name:'',subject,body,date};
 }
 function openEta(){
   const d=etaDraft();
@@ -1738,13 +1850,13 @@ document.addEventListener('click',e=>{const p=e.target.closest('[data-docprev]')
 document.addEventListener('change',e=>{const t=e.target;if(t.dataset.docvis!=null&&t.closest('.mbox.prev')){const l=t.closest('.ecv');l.classList.toggle('on',t.checked);}});
 
 /* ---- schedule diary (Modular style) ---- */
-const SB={week:null,eng:'JM',pending:[],ramsAsk:false,drag:null};
+const SB={week:null,eng:'JM',pending:[],ramsAsk:false,drag:null,sel:new Set()};
 const SBOARD=[];
 const MOCKST=['allocated','progress','allocated','completed','allocated','parts'];
 (function seed(){
   let id=1;
   JOBS.forEach(j=>{if(!j.sched)return;j.engs.forEach(e=>{const st=j.sched;const end=new Date(st.getTime()+(j.type==='project'?8:j.type==='service'?4:2.5)*3600e3);SBOARD.push({id:id++,eng:e,date:ymd(st),start:hm(st),end:hm(end),no:j.no,cl:j.cl,name:j.name||j.cat,type:j.type,st:j.st,site:j.site,d:j.d});});});
-  const extra=[['JM',2,'13:30','15:30','Athenaeum','Sounder test','service','Church Alley, L1 3DD'],['KD',2,'08:00','11:00','HESIS','Shutter limits','call','Dale Barracks, CH2 4BD'],['KD',3,'12:00','15:00','A Star','Barrier service','service','Seaforth depot, L21 1DN'],['RH',3,'08:30','11:30','X1','Fob reprogramming','call','Eastbank Tower, M3 7HG'],['RH',5,'09:00','16:00','EFT Systems','AICO install','project','New Devonshire Square, M7 4AD'],['DP',2,'12:00','15:30','VINCI','EL monthly test','service','Clatterbridge Cancer Centre, CH63 4JY'],['DP',5,'08:00','12:00','Stevenson Whyte','Door entry','call','Kelso Place, M15 4GT'],['LS',3,'08:00','16:30','Neighbourhood Service Centre','CCTV install','project','Norris Green, L11 2SJ'],['LS',4,'08:00','16:30','Neighbourhood Service Centre','CCTV install','project','Norris Green, L11 2SJ'],['JM',5,'08:00','10:00','Alt Valley Community Trust','Weekly alarm test','service','Communiversity, L11 0BS'],['RH',1,'13:00','15:00','Rothwell Interiors','Shutter repair','call','goPuff Tottenham 1588, N15 4ND'],['KD',6,'09:00','12:00','HESIS','Door PPM','service','Dale Barracks, CH2 4BD']];
+  const extra=[['JM',2,'13:30','15:30','Athenaeum','Sounder test','service','Church Alley, L1 3DD'],['KD',2,'13:00','15:30','HESIS','Shutter limits','call','Dale Barracks, CH2 4BD'],['KD',3,'12:00','15:00','A Star','Barrier service','service','Seaforth depot, L21 1DN'],['RH',3,'08:30','11:30','X1','Fob reprogramming','call','Eastbank Tower, M3 7HG'],['RH',5,'09:00','16:00','EFT Systems','AICO install','project','New Devonshire Square, M7 4AD'],['DP',2,'12:00','15:30','VINCI','EL monthly test','service','Clatterbridge Cancer Centre, CH63 4JY'],['DP',5,'08:00','12:00','Stevenson Whyte','Door entry','call','Kelso Place, M15 4GT'],['LS',3,'08:00','16:30','Neighbourhood Service Centre','CCTV install','project','Norris Green, L11 2SJ'],['LS',4,'08:00','16:30','Neighbourhood Service Centre','CCTV install','project','Norris Green, L11 2SJ'],['JM',5,'08:00','10:00','Alt Valley Community Trust','Weekly alarm test','service','Communiversity, L11 0BS'],['RH',1,'13:00','15:00','Rothwell Interiors','Shutter repair','call','goPuff Tottenham 1588, N15 4ND'],['KD',6,'09:00','12:00','HESIS','Door PPM','service','Dale Barracks, CH2 4BD']];
   extra.forEach(([e,day,a,b,cl,nm,ty,site],i)=>{const d=new Date(2026,10,1+day);SBOARD.push({id:id++,eng:e,date:ymd(d),start:a,end:b,no:null,cl,name:nm,type:ty,st:MOCKST[i%MOCKST.length],site,d:''});});
 })();
 const ROWH=22, T0M=6*60, T1M=20*60;           // 30 min = 22px, diary 06:00 to 20:00
@@ -1753,7 +1865,7 @@ const toHM=m=>String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart
 function weekStart(d){const x=new Date(d);x.setHours(0,0,0,0);x.setDate(x.getDate()-x.getDay());return x;}
 function njDur(){const a=NJ.vtime||'08:00',b=NJ.vend||'10:00';return Math.max(30,toMin(b)-toMin(a));}
 function openSchedule(){
-  SB.week=weekStart(NJ.book[0]?new Date(NJ.book[0].date+'T12:00'):NJ.vdate?new Date(NJ.vdate+'T12:00'):NOW);SB.ramsAsk=false;
+  SB.ignoreClash=false;SB.sel=new Set();SB.week=weekStart(NJ.book[0]?new Date(NJ.book[0].date+'T12:00'):NJ.vdate?new Date(NJ.vdate+'T12:00'):NOW);SB.ramsAsk=false;
   SB.pending=NJ.book.length?NJ.book.map(b=>({...b})):(NJ.vdate&&NJ.engs.length?NJ.engs.map(e=>({eng:e,date:NJ.vdate,start:NJ.vtime||'08:00',end:NJ.vend||'10:00'})):[]);
   SB.eng=SB.pending[0]?.eng||NJ.engs[0]||'JM';
   renderSchedule(true);const m=document.getElementById('modal');m.classList.add('show');m.setAttribute('aria-hidden','false');document.getElementById('scrim').classList.add('show');
@@ -1767,33 +1879,49 @@ function jobCard(){
     <div class="jc1"><span class="ttag ${n.type}">${TYPES[n.type].l}</span>${n.cat?`<span class="jccat">${esc(n.cat)}</span>`:''}</div>
     <b class="jcno num">JOB-${nextNo()}</b>
     <span class="jccl">${esc(clientLab||'No client chosen')}</span>
-    ${siteName||addr||pc?`<div class="jcaddr">${siteName?`<span>${esc(siteName)}</span>`:''}${addr?`<span>${esc(addr)}</span>`:''}${pc?`<span>${esc(pc)}</span>`:''}</div>`:''}
-    <div class="jcm"><span class="pri p${n.pri}"><i>P${n.pri}</i>${PRI[n.pri].l}</span><span>Due ${schedLabel(new Date(njTarget()))}</span></div>
-    <div class="jcdrag">${ic('swap')}Drag into the diary</div>
+    ${siteName||addr||pc?`<div class="jcaddr">${esc([siteName,dedupe(siteName,addr),pc].filter(Boolean).join(', '))}</div>`:''}
+    ${n.type==='project'?'':`<div class="jc2"><span class="pri p${n.pri}"><i>P${n.pri}</i>${PRI[n.pri].l}</span><span class="jcdue">Due ${schedLabel(new Date(njTarget()))}</span></div>`}
   </div>`;
 }
-function tile(v,mine){
+const dedupe=(nm,ad)=>{if(!ad)return '';const parts=ad.split(', ').filter(p=>p.toLowerCase()!==String(nm).toLowerCase());return parts.join(', ');};
+function siteLines(site){if(!site)return [];const i=site.lastIndexOf(', ');const nm=site.slice(0,i),pc=site.slice(i+2);const ad=dedupe(nm,SITE_ADDR[site]||'');return [nm,ad,pc].filter(Boolean);}
+function curSiteLines(){const n=NJ;if(n.newSite)return [n.newSite.name,[n.newSite.line1,n.newSite.town].filter(Boolean).join(', '),n.newSite.pc].filter(Boolean);if(!n.site)return [];const i=n.site.lastIndexOf(', ');const nm=n.site.slice(0,i);return [nm,dedupe(nm,n.siteAddr||SITE_ADDR[n.site]||''),n.site.slice(i+2)].filter(Boolean);}
+function tile(v,mine,l=0,n=1){
   const top=(toMin(v.start)-T0M)/30*ROWH, h=Math.max(ROWH,(toMin(v.end)-toMin(v.start))/30*ROWH-2);
-  if(mine){return `<div class="dt mine" draggable="true" data-pend="${v.i}" style="top:${top+1}px;height:${h}px"><span class="cur">This job</span><b>${v.start} to ${v.end}</b><span class="dtn">JOB-${nextNo()}</span><button type="button" class="dtx" data-punbook="${v.i}" aria-label="Remove booking">${ic('x')}</button></div>`;}
+  const pos=n>1?`left:calc(3px + (100% - 6px)*${l}/${n});right:auto;width:calc((100% - 6px)/${n} - 2px);`:'';
+  const lock=v.locked?`<span class="dlock" title="Locked">${ic('lock')}</span>`:'';
+  const note=v.note?`<span class="dnote">${ic('doc')}${esc(v.note)}</span>`:'';
+  if(mine){const ls=curSiteLines();return `<div class="dt mine ${v.locked?'locked':''}" ${v.locked?'':'draggable="true"'} data-pend="${v.i}" style="${pos}top:${top+1}px;height:${h}px"><span class="cur">This job</span><b>${v.start} to ${v.end}</b><span class="dtno">JOB-${nextNo()}</span>${NJ.name?`<span class="dtn">${esc(NJ.name)}</span>`:''}${note}${ls.map(l=>`<span class="dts">${esc(l)}</span>`).join('')}${lock}${v.locked?'':`<button type="button" class="dtx" data-punbook="${v.i}" aria-label="Remove booking">${ic('x')}</button>`}</div>`;}
   const st=SMAP[v.st]||SMAP.allocated;
-  return `<div class="dt ${v.type}" draggable="true" data-mv="${v.id}" data-tip="${v.id}" style="top:${top+1}px;height:${h}px">
-    <b>${v.start} to ${v.end}</b><span class="dtn">${v.no?'JOB-'+v.no+' · ':''}${esc(v.name)}</span>
-    <span class="dtst" style="background:${st.bg};color:${st.ink}"><i style="background:${st.c}"></i>${st.l}</span><span class="dts">${esc(v.cl)}</span></div>`;
+  return `<div class="dt ${v.type} ${v.locked?'locked':''}" ${v.locked?'':'draggable="true"'} data-mv="${v.id}" data-tip="${v.id}" style="${pos}top:${top+1}px;height:${h}px">
+    <b>${v.start} to ${v.end}</b>${v.no?`<span class="dtno">JOB-${v.no}</span>`:''}<span class="dtn">${esc(v.name)}</span>
+    <span class="dtst" style="background:${st.bg};color:${st.ink}"><i style="background:${st.c}"></i>${st.l}</span>${note}<span class="dts">${esc(v.cl)}</span>${siteLines(v.site).map(l=>`<span class="dts">${esc(l)}</span>`).join('')}${lock}</div>`;
+}
+function laneTiles(items){
+  items.sort((a,b)=>toMin(a.v.start)-toMin(b.v.start));
+  const out=[];let cluster=[],end=-1;
+  const flush=()=>{const lanesEnd=[];cluster.forEach(it=>{let l=lanesEnd.findIndex(e=>e<=toMin(it.v.start));if(l<0){l=lanesEnd.length;lanesEnd.push(0);}lanesEnd[l]=toMin(it.v.end);it.l=l;});cluster.forEach(it=>{it.n=lanesEnd.length;out.push(it);});cluster=[];};
+  items.forEach(it=>{if(toMin(it.v.start)>=end&&cluster.length)flush();cluster.push(it);end=Math.max(end,toMin(it.v.end));});if(cluster.length)flush();
+  return out.map(it=>tile(it.v,it.mine,it.l,it.n)).join('');
+}
+function clashes(){
+  const out=[];SB.pending.forEach(p=>{SBOARD.filter(x=>x.eng===p.eng&&x.date===p.date&&toMin(x.start)<toMin(p.end)&&toMin(p.start)<toMin(x.end)).forEach(x=>out.push({p,x}));});return out;
 }
 function renderSchedule(scrollTo7){
   const days=[...Array(7)].map((_,i)=>{const d=new Date(SB.week);d.setDate(d.getDate()+i);return d;});
-  const wk=`${days[0].getDate()} ${MON[days[0].getMonth()]} to ${days[6].getDate()} ${MON[days[6].getMonth()]}`;
+  const wk=`${ORD(days[0].getDate())} ${MON[days[0].getMonth()]} to ${ORD(days[6].getDate())} ${MON[days[6].getMonth()]}`;
   const hours=[];for(let m=T0M;m<T1M;m+=30)hours.push(m);
   const inWeek=x=>days.some(d=>ymd(d)===x.date);
   const old=document.querySelector('.dscroll');const keep=old?old.scrollTop:null;
   document.getElementById('modal').innerHTML=`<div class="mbox sbm2" role="dialog" aria-modal="true" aria-labelledby="sbT">
-    <div class="sbh2"><div class="grow"><h2 id="sbT">Schedule job</h2><p>Drag the job card into an engineer's diary, or click and drag down in the diary to book. Drag tiles to move them.</p></div>
-      <button type="button" class="btn" id="mCancel">Cancel</button><button type="button" class="btn dark" id="sbBook" ${SB.pending.length?'':'disabled'}>${ic('check')}Book ${SB.pending.length>1?SB.pending.length+' visits':'visit'}</button></div>
+    <div class="sbh2"><div class="grow"><h2 id="sbT">Schedule job</h2><p>Drag the job card into an engineer's diary, or click and drag in the diary. Drag across Monday to Friday to book several days, and to the edge to carry on into the next week. Right-click a visit for notes, lock or remove.</p></div>
+      <button type="button" class="btn" id="mCancel">Cancel</button><button type="button" class="btn go" id="sbBook" ${SB.pending.length?'':'disabled'}>${ic('check')}Book ${SB.pending.length>1?SB.pending.length+' visits':'visit'}</button></div>
+    ${(()=>{const c=clashes();if(!c.length||SB.ignoreClash)return '';return `<div class="clashw"><div class="clash"><div class="clh">${ic('alert')}<b>${c.length===1?'1 clash':c.length+' clashes'} with other visits</b><button type="button" class="btn sm" data-ignoreclash="1">Ignore</button></div>${c.map(({p,x})=>{const sl=siteLines(x.site);return `<div class="cli"><span class="clw">${ENG[p.eng].name.split(' ')[0]}, ${schedLabel(new Date(x.date+'T12:00'))}, ${x.start} to ${x.end}</span><span class="clj">${x.no?'JOB-'+x.no+' - ':''}${esc(x.name)}${sl.length?', '+esc(sl.slice(1).join(', ')||sl[0]):''}</span></div>`;}).join('')}</div></div>`;})()}
     ${SB.ramsAsk?`<div class="sbrams">${ic('doc')}<span><b>RAMS are required before attendance.</b> Have they been sent to the client?</span><button type="button" class="btn sm" data-rams="yes">Yes, mark as sent</button><button type="button" class="btn sm ghost" data-rams="later">Book anyway</button></div>`:''}
     <div class="sbb">
       <div class="sbl">
         ${jobCard()}
-        ${SB.pending.length?`<div class="sbbox"><div class="sbbh">Booked for this job</div>${SB.pending.map((p,i)=>`<div class="pb"><span class="av sm" style="background:${ENG[p.eng].c}">${p.eng}</span><div class="grow"><b>${ENG[p.eng].name.split(' ')[0]}, ${schedLabel(new Date(p.date+'T12:00'))}</b><small>${p.start} to ${p.end}</small></div><button type="button" class="iconb" data-punbook="${i}" aria-label="Remove">${ic('x')}</button></div>`).join('')}</div>`:''}
+        ${SB.pending.length?`<div class="sbbox"><div class="sbbh2"><label class="selall"><input type="checkbox" data-pselall ${SB.sel.size&&SB.sel.size===SB.pending.length?'checked':''}><span>Booked for this job</span></label>${SB.sel.size?`<button type="button" class="btn sm" data-premsel="1">${ic('x')}Remove ${SB.sel.size}</button>`:''}</div>${SB.pending.map((p,i)=>`<div class="pb ${SB.sel.has(i)?'psel':''}"><input type="checkbox" data-psel="${i}" ${SB.sel.has(i)?'checked':''} aria-label="Select this visit"><span class="av sm" style="background:${ENG[p.eng].c}">${p.eng}</span><div class="grow"><b>${ENG[p.eng].name.split(' ')[0]}, ${schedLabel(new Date(p.date+'T12:00'))}</b><small>${p.start} to ${p.end}</small></div><button type="button" class="iconb" data-punbook="${i}" aria-label="Remove">${ic('x')}</button></div>`).join('')}</div>`:''}
         <div class="sbbox"><div class="sbbh">Engineers</div>
           ${Object.entries(ENG).map(([k,e])=>{const n=SBOARD.filter(x=>x.eng===k&&inWeek(x)).length;const booked=SB.pending.some(p=>p.eng===k);return `<button type="button" class="engr ${SB.eng===k?'on':''}" data-seng="${k}"><span class="av" style="background:${e.c}">${k}</span><span class="grow"><b>${e.name}</b><small>${n} this week${booked?', booked on this job':''}</small></span>${SB.eng===k?ic('check'):''}</button>`;}).join('')}
         </div>
@@ -1807,8 +1935,7 @@ function renderSchedule(scrollTo7){
           <div class="dscroll"><div class="dgrid">
             <div class="dtimes">${hours.map(m=>`<div style="height:${ROWH}px">${m%60?'':toHM(m)}</div>`).join('')}</div>
             ${days.map(d=>{const key=ymd(d);return `<div class="dcol ${sameDay(d,NOW)?'tday':''} ${d.getDay()%6===0?'we':''}" data-col="${key}" style="height:${hours.length*ROWH}px">
-              ${SBOARD.filter(x=>x.eng===SB.eng&&x.date===key).map(x=>tile(x,false)).join('')}
-              ${SB.pending.map((p,i)=>({...p,i})).filter(p=>p.eng===SB.eng&&p.date===key).map(p=>tile(p,true)).join('')}
+              ${laneTiles([...SBOARD.filter(x=>x.eng===SB.eng&&x.date===key).map(x=>({v:x,mine:false})),...SB.pending.map((p,i)=>({...p,i})).filter(p=>p.eng===SB.eng&&p.date===key).map(p=>({v:p,mine:true}))])}
             </div>`;}).join('')}
           </div></div>
         </div>
@@ -1821,7 +1948,7 @@ function minsAt(col,clientY,snap=30){const r=col.getBoundingClientRect();const y
 function addPending(eng,date,start,end){
   const ex=SB.pending.find(p=>p.eng===eng&&p.date===date);
   if(ex){ex.start=start;ex.end=end;}else SB.pending.push({eng,date,start,end});
-  renderSchedule();toast(`${ENG[eng].name.split(' ')[0]} booked ${schedLabel(new Date(date+'T12:00'))}, ${start} to ${end}`);
+  SB.ignoreClash=false;renderSchedule();toast(`${ENG[eng].name.split(' ')[0]} booked ${schedLabel(new Date(date+'T12:00'))}, ${start} to ${end}`);
 }
 function confirmBook(){
   if(NJ.rams&&!NJ.ramsSent&&!SB.ramsAsk){SB.ramsAsk=true;renderSchedule();return;}
@@ -1840,21 +1967,74 @@ document.addEventListener('mouseout',e=>{if(e.target.closest?.('[data-tip]')&&!e
 document.addEventListener('click',e=>{
   const t=e.target;
   if(t.closest('#schedBtn,#schedBtn2')){e.stopPropagation();openSchedule();return;}
+  const eb=t.closest('[data-editbook]');if(eb){e.stopPropagation();const b=NJ.book[+eb.dataset.editbook];openSchedule();SB.eng=b.eng;SB.week=weekStart(new Date(b.date+'T12:00'));renderSchedule(false);const sc=document.querySelector('.dscroll');if(sc)sc.scrollTop=Math.max(0,(toMin(b.start)-T0M)/30*ROWH-60);return;}
   const ub0=t.closest('[data-unbook]');if(ub0){e.stopPropagation();NJ.book.splice(+ub0.dataset.unbook,1);NJ.engs=[...new Set(NJ.book.map(p=>p.eng))];if(!NJ.book.length){NJ.vdate='';}render();return;}
   if(!t.closest('.sbm2'))return;
+  if(t.closest('[data-ignoreclash]')){SB.ignoreClash=true;renderSchedule();return;}
   const wk=t.closest('[data-wk]');if(wk){const d=+wk.dataset.wk;SB.week=d===0?weekStart(NOW):new Date(SB.week.getFullYear(),SB.week.getMonth(),SB.week.getDate()+7*d);renderSchedule(true);return;}
   const se=t.closest('[data-seng]');if(se){SB.eng=se.dataset.seng;renderSchedule();return;}
-  const ub=t.closest('[data-punbook]');if(ub){e.stopPropagation();SB.pending.splice(+ub.dataset.punbook,1);renderSchedule();return;}
+  const ub=t.closest('[data-punbook]');if(ub){e.stopPropagation();SB.pending.splice(+ub.dataset.punbook,1);SB.sel=new Set();renderSchedule();return;}
+  if(t.closest('[data-premsel]')){const n=SB.sel.size;SB.pending=SB.pending.filter((_,i)=>!SB.sel.has(i));SB.sel=new Set();renderSchedule();toast(`${n} visit${n>1?'s':''} removed`);return;}
   if(t.closest('#sbBook')){if(SB.pending.length)confirmBook();return;}
   const rm=t.closest('[data-rams]');if(rm){NJ.ramsSent=true;SB.ramsAsk='done';confirmBook();return;}
 },true);
-/* click and drag down in a column to book */
-let draw=null;
+/* click and drag in the diary: down for time, across Mon to Fri for several days, to the edge for the next week */
+let draw=null,edgeT=null;
+const isWE=d=>{const x=new Date(d+'T12:00').getDay();return x===0||x===6;};
+function drawDates(){
+  if(isWE(draw.d0))return [draw.d0];
+  let a=new Date(draw.d0+'T12:00'),b=new Date((isWE(draw.d1)?draw.dLastWk:draw.d1)+'T12:00');if(b<a)[a,b]=[b,a];
+  const out=[];for(const d=new Date(a);d<=b;d.setDate(d.getDate()+1)){if(d.getDay()%6)out.push(ymd(d));}return out;
+}
+function paintDraw(){
+  document.querySelectorAll('.dghost').forEach(g=>g.remove());if(!draw)return;
+  const dates=drawDates();
+  dates.forEach((dt,i)=>{const col=document.querySelector(`.dcol[data-col="${dt}"]`);if(!col)return;const g=document.createElement('div');g.className='dghost';g.style.top=((draw.s-T0M)/30*ROWH+1)+'px';g.style.height=((draw.e-draw.s)/30*ROWH-2)+'px';g.textContent=i===0?`${toHM(draw.s)} to ${toHM(draw.e)}${dates.length>1?`, ${dates.length} days`:''}`:'';col.appendChild(g);});
+}
 document.addEventListener('pointerdown',e=>{const col=e.target.closest?.('.dcol');if(!col||e.target.closest('.dt')||e.button!==0)return;
-  const m=minsAt(col,e.clientY);draw={col,date:col.dataset.col,s:m,e:m+60,el:document.createElement('div')};draw.el.className='ghost';col.appendChild(draw.el);paintGhost();col.setPointerCapture?.(e.pointerId);e.preventDefault();});
-function paintGhost(){const g=draw.el;g.style.top=((draw.s-T0M)/30*ROWH+1)+'px';g.style.height=((draw.e-draw.s)/30*ROWH-2)+'px';g.textContent=`${toHM(draw.s)} to ${toHM(draw.e)}`;}
-document.addEventListener('pointermove',e=>{if(!draw)return;const m=minsAt(draw.col,e.clientY)+30;draw.e=Math.max(draw.s+30,m);paintGhost();});
-document.addEventListener('pointerup',e=>{if(!draw)return;const d=draw;draw=null;d.el.remove();addPending(SB.eng,d.date,toHM(d.s),toHM(Math.min(T1M,d.e)));});
+  const m=minsAt(col,e.clientY);draw={d0:col.dataset.col,d1:col.dataset.col,dLastWk:col.dataset.col,s:m,e:m+60};paintDraw();e.preventDefault();});
+document.addEventListener('pointermove',e=>{if(!draw)return;
+  const el=document.elementFromPoint(e.clientX,e.clientY);const col=el&&el.closest?el.closest('.dcol'):null;
+  const any=col||document.querySelector(`.dcol[data-col="${draw.d1}"]`)||document.querySelector('.dcol');
+  if(any){draw.e=Math.max(draw.s+30,minsAt(any,e.clientY)+30);}
+  if(col&&!isWE(draw.d0)){draw.d1=col.dataset.col;if(!isWE(col.dataset.col))draw.dLastWk=col.dataset.col;}
+  const diary=document.querySelector('.diary');
+  if(diary&&!isWE(draw.d0)){const r=diary.getBoundingClientRect();const dir=e.clientX>r.right-28?1:e.clientX<r.left+52+28?-1:0;
+    if(dir&&!edgeT){edgeT=setTimeout(()=>{edgeT=null;if(!draw)return;SB.week=new Date(SB.week.getFullYear(),SB.week.getMonth(),SB.week.getDate()+7*dir);renderSchedule();
+      const d=new Date(SB.week);d.setDate(d.getDate()+(dir>0?1:5));draw.d1=ymd(d);draw.dLastWk=ymd(d);paintDraw();},650);}
+    if(!dir&&edgeT){clearTimeout(edgeT);edgeT=null;}}
+  paintDraw();});
+document.addEventListener('pointerup',e=>{if(!draw)return;clearTimeout(edgeT);edgeT=null;const d=draw;const dates=drawDates();draw=null;paintDraw();
+  const st=toHM(d.s),en=toHM(Math.min(T1M,d.e));
+  dates.forEach(dt=>{const ex=SB.pending.find(p=>p.eng===SB.eng&&p.date===dt);if(ex){ex.start=st;ex.end=en;}else SB.pending.push({eng:SB.eng,date:dt,start:st,end:en});});
+  SB.ignoreClash=false;renderSchedule();toast(`${ENG[SB.eng].name.split(' ')[0]} booked ${dates.length>1?dates.length+' days from '+schedLabel(new Date(dates[0]+'T12:00')):schedLabel(new Date(dates[0]+'T12:00'))}, ${st} to ${en}`);});
+/* right-click menu on visits */
+let ctxEl=null;
+function closeCtx(){ctxEl?.remove();ctxEl=null;}
+function openCtx(x,y,items){closeCtx();ctxEl=document.createElement('div');ctxEl.className='menu ctx';ctxEl.setAttribute('role','menu');
+  ctxEl.innerHTML=items.map((it,i)=>`<button role="menuitem" data-ci="${i}" class="${it.danger?'danger':''}" ${it.disabled?'disabled':''}>${ic(it.i)}${it.l}</button>`).join('');document.body.appendChild(ctxEl);
+  const w=ctxEl.offsetWidth,h=ctxEl.offsetHeight;ctxEl.style.left=Math.min(x,innerWidth-w-8)+'px';ctxEl.style.top=Math.min(y,innerHeight-h-8)+'px';
+  ctxEl.addEventListener('click',ev=>{const b=ev.target.closest('[data-ci]');if(!b||b.disabled)return;ev.stopPropagation();const f=items[+b.dataset.ci].f;closeCtx();f();});ctxEl.querySelector('button')?.focus();}
+function noteEditor(x,y,v){closeCtx();ctxEl=document.createElement('div');ctxEl.className='menu ctx notepop';
+  ctxEl.innerHTML=`<b>Schedule note</b><textarea class="in" rows="3" placeholder="e.g. Keys from the concierge, park in bay 4">${esc(v.note||'')}</textarea><div class="np"><button type="button" class="btn sm" data-np="0">Cancel</button><button type="button" class="btn sm go" data-np="1">Save note</button></div>`;
+  document.body.appendChild(ctxEl);const w=ctxEl.offsetWidth,h=ctxEl.offsetHeight;ctxEl.style.left=Math.min(x,innerWidth-w-8)+'px';ctxEl.style.top=Math.min(y,innerHeight-h-8)+'px';
+  const ta=ctxEl.querySelector('textarea');ta.focus();
+  const save=()=>{v.note=ta.value.trim();closeCtx();renderSchedule();toast(v.note?'Note added to the visit':'Note removed');};
+  ctxEl.addEventListener('click',ev=>{ev.stopPropagation();const b=ev.target.closest('[data-np]');if(!b)return;if(b.dataset.np==='1')save();else closeCtx();});
+  ta.addEventListener('keydown',ev=>{if(ev.key==='Enter'&&!ev.shiftKey){ev.preventDefault();save();}if(ev.key==='Escape'){ev.stopPropagation();closeCtx();}});
+}
+document.addEventListener('contextmenu',e=>{const t=e.target.closest?.('.sbm2 .dt');if(!t)return;e.preventDefault();tipEl.style.display='none';
+  const v=t.dataset.pend!=null?SB.pending[+t.dataset.pend]:SBOARD.find(x=>x.id==t.dataset.mv);if(!v)return;
+  const mine=t.dataset.pend!=null;
+  openCtx(e.clientX,e.clientY,[
+    {l:v.note?'Edit note':'Add note',i:'doc',f:()=>noteEditor(e.clientX,e.clientY,v)},
+    {l:v.locked?'Unlock':'Lock',i:'lock',f:()=>{v.locked=!v.locked;renderSchedule();toast(v.locked?'Visit locked, it can’t be moved':'Visit unlocked');}},
+    ...(!mine&&v.no?[{l:'Open job',i:'jobs',f:()=>toast(`JOB-${v.no} opens the job page, next in the build`)}]:[]),
+    {l:'Remove from schedule',i:'x',danger:true,disabled:v.locked,f:()=>{if(mine)SB.pending.splice(+t.dataset.pend,1);else SBOARD.splice(SBOARD.indexOf(v),1);renderSchedule();toast('Removed from the schedule');}}
+  ]);
+});
+document.addEventListener('pointerdown',e=>{if(ctxEl&&!ctxEl.contains(e.target))closeCtx();},true);
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&ctxEl){closeCtx();e.stopImmediatePropagation();}},true);
 /* drag the job card or tiles */
 document.addEventListener('dragstart',e=>{const t=e.target;
   if(t.closest?.('[data-jcard]'))SB.drag={k:'new'};
@@ -1873,6 +2053,110 @@ document.addEventListener('drop',e=>{const c=e.target.closest?.('.dcol');if(!c||
   if(d.k==='pend'){const p=SB.pending[d.i];const dur=toMin(p.end)-toMin(p.start);p.date=date;p.start=toHM(s);p.end=toHM(Math.min(T1M,s+dur));renderSchedule();return;}
   if(d.k==='mv'){const x=SBOARD.find(y=>y.id===d.id);const dur=toMin(x.end)-toMin(x.start);x.date=date;x.start=toHM(s);x.end=toHM(Math.min(T1M,s+dur));renderSchedule();toast(`Moved ${x.name} to ${schedLabel(new Date(date+'T12:00'))}, ${x.start}`);}
 },true);
+
+/* ---- contacts, site contacts, assets, WhatsApp ---- */
+const clientKey=()=>NJ.newClient?'__newclient':NJ.client;
+const siteKey=()=>NJ.newSite?'__newsite':NJ.site;
+const SITE_CONTACTS={
+ 'Lifestyles Everton Park, L5 5PH':[{name:'Duty manager',phone:'0151 233 3050',role:'Front desk'},{name:'Mark Hughes',phone:'07712 448210',role:'Plant room keyholder'}],
+ 'The Royal, Wilton Place, M3 6FT':[{name:'Concierge',phone:'0161 834 2210',role:'Keys and access'}],
+ 'Clatterbridge Cancer Centre, CH63 4JY':[{name:'Gary Bolton',phone:'0151 318 8990',role:'Estates'}],
+ 'goPuff Cardiff 1186, CF5 1BH':[{name:'Store manager',phone:'',role:'On shift'}],
+ 'Church Alley, L1 3DD':[{name:'House manager',phone:'0151 709 7770',role:'Reception'}],
+ 'Dale Barracks, CH2 4BD':[{name:'Guardroom',phone:'01244 384 200',role:'Site passes'}],
+ 'Eastbank Tower, M3 7HG':[{name:'Building manager',phone:'0161 832 1120',role:''}]
+};
+const ATYPES=['Fire alarm panel','Smoke detectors','Emergency lighting','Fire extinguishers','Fire doors','Roller shutter','Industrial door','Automatic gate','Power-operated door','Intruder alarm','CCTV system','Access control','AOV'];
+const FREQS=['Weekly','Monthly','Quarterly','6-monthly','Annual','5-yearly'];
+const ASSETS={};
+function assetsFor(site){
+  if(!site)return [];
+  if(!ASSETS[site]){
+    let h=0;for(const ch of site)h=(h*31+ch.charCodeAt(0))>>>0;
+    const pick=[[0,'Ground floor riser','6-monthly'],[2,'All floors','Annual'],[3,'Throughout','Annual'],[5,'Loading bay','6-monthly'],[9,'Main entrance','6-monthly'],[10,'Car park','Annual'],[11,'Main entrance','Annual'],[4,'Stair cores','Quarterly'],[1,'Corridors','6-monthly']];
+    const n=3+(h%4);const out=[];
+    for(let i=0;i<n;i++){const p=pick[(h+i*3)%pick.length];const last=new Date(2026,3+((h+i)%6),1+((h>>i)%27));const months={'Weekly':0.25,'Monthly':1,'Quarterly':3,'6-monthly':6,'Annual':12}[p[2]];const next=new Date(last);next.setMonth(next.getMonth()+Math.round(months));
+      out.push({id:`A${100+((h+i*7)%800)}`,type:ATYPES[p[0]],loc:p[1],freq:p[2],last,next});}
+    if(/Everton Park/.test(site))out.unshift({id:'A214',type:'Roller shutter',loc:'Wet side plant room',freq:'6-monthly',last:new Date(2026,4,12),next:new Date(2026,10,12)});
+    if(/Dale Barracks/.test(site))out.unshift({id:'A318',type:'Industrial door',loc:'Vehicle workshop, doors 1 to 6',freq:'6-monthly',last:new Date(2026,4,20),next:new Date(2026,10,20)});
+    ASSETS[site]=out;
+  }
+  return ASSETS[site];
+}
+const CAT2ATYPE={'Fire alarm':['Fire alarm panel','Smoke detectors'],'Emergency lighting':['Emergency lighting'],'Fire extinguishers':['Fire extinguishers'],'Fire doors':['Fire doors'],'Roller shutters':['Roller shutter'],'Industrial doors':['Industrial door'],'Automatic gates':['Automatic gate'],'Power-operated doors':['Power-operated door'],'Intruder alarm':['Intruder alarm'],'CCTV':['CCTV system'],'Access control':['Access control'],'AOVs':['AOV']};
+function preselectAssets(){const n=NJ;if(!n||n.type!=='service')return;const key=siteKey();if(!key||n.assets.length)return;const want=CAT2ATYPE[n.cat]||[];n.assets=assetsFor(key).filter(a=>want.includes(a.type)).map(a=>a.id);}
+function assetsCard(){
+  const n=NJ,key=siteKey(),list=assetsFor(key);
+  return `<section class="card njc">
+    <div class="njch"><div><h2>Assets to service</h2><p>Pick the assets this visit covers. <span>Each one gets its own certificate on the engineer's app.</span></p></div>${key?`<button type="button" class="btn sm" data-addasset="1">${ic('plus')}Add asset</button>`:''}</div>
+    ${!key?`<div class="docsempty">Choose a site to see its assets.</div>`:`
+    ${n.newAsset?`<div class="newbox" style="margin-bottom:12px"><div class="nbh"><b>New asset</b><button type="button" class="linkb" data-cancelnew="asset">Cancel</button></div>
+      <div class="two">${dd('natype',{value:n.newAsset.type,opts:ATYPES.map(t=>({v:t,l:t})),placeholder:'Asset type',search:true})}${dd('nafreq',{value:n.newAsset.freq,opts:FREQS.map(f=>({v:f,l:f})),placeholder:'Service frequency'})}</div>
+      <div class="two"><input class="in" data-na="loc" value="${esc(n.newAsset.loc)}" placeholder="Location, e.g. Plant room"><input class="in" data-na="no" value="${esc(n.newAsset.no)}" placeholder="Asset no. (optional)"></div>
+      <button type="button" class="btn sm go savebtn" data-savenew="asset">${ic('check')}Save asset</button></div>`:''}
+    ${list.length?`<div class="docs">${list.map(a=>{const on=n.assets.includes(a.id);const over=a.next<NOW;return `<label class="assr ${on?'on':''}"><input type="checkbox" data-asset="${a.id}" ${on?'checked':''}><span class="bx">${ic('check')}</span>
+      <div class="grow"><b>${esc(a.type)}</b><small>${esc(a.loc)}, ${a.id}</small></div><span class="afreq">${esc(a.freq)}</span>
+      <span class="anext ${over?'over':''}">${over?'Overdue':'Next'} ${schedLabel(a.next)}${a.next.getFullYear()!==NOW.getFullYear()?' '+a.next.getFullYear():''}</span></label>`;}).join('')}</div>`:`<div class="docsempty">No assets saved for this site yet. Add the first one.</div>`}
+    ${n.assets.length?`<p class="njsub" style="margin:10px 0 0">${n.assets.length} asset${n.assets.length>1?'s':''} selected. Their next service dates update when the job is completed.</p>`:''}`}
+  </section>`;
+}
+const WA_NUMBER='+44 7700 900412';
+const WA_CONTACTS=[
+ {k:'JM',name:'Joe Murphy',ph:'07700 900101',org:'ION engineer'},{k:'KD',name:'Kieran Doyle',ph:'07700 900102',org:'ION engineer'},{k:'RH',name:'Ryan Hughes',ph:'07700 900103',org:'ION engineer'},{k:'DP',name:'Dan Pearson',ph:'07700 900104',org:'ION engineer'},{k:'LS',name:'Liam Shaw',ph:'07700 900105',org:'ION engineer'},
+ {name:'Lorren King',ph:'07700 900110',org:'ION office'},{name:'John Lee',ph:'07700 900111',org:'ION director'},
+ {name:'Billy Kelly',ph:'07700 900201',org:'Liverpool City Council'},{name:'Geordie Rothwell',ph:'07826 899546',org:'Rothwell Interiors'},{name:'Helen Forde',ph:'07523 923168',org:'VINCI'},{name:'Nicola McMahon',ph:'07700 900204',org:'Stevenson Whyte'},{name:'Mark Hughes',ph:'07712 448210',org:'Everton Park keyholder'}
+];
+function waName(){
+  const n=NJ;let line='';
+  if(n.newSite)line=n.newSite.line1||n.newSite.name;
+  else if(n.site){line=(n.siteAddr||SITE_ADDR[n.site]||n.site).split(',')[0];}
+  return `JOB-${nextNo()} - ${line||'Site address'}`;
+}
+function waCard(){
+  const n=NJ,g=n.wa;
+  return `<section class="card njc">
+    <div class="njch"><div><h2>WhatsApp group</h2><p>Project updates in one group. <span>Messages and photos from the group save to the job.</span></p></div></div>
+    <div class="waconn"><span class="wadot"></span><span class="grow"><b>ION Group WhatsApp</b><small>${WA_NUMBER}, connected</small></span>${ic('wa')}</div>
+    ${!g?`<div class="wacreate"><div class="grow"><small>Group name</small><b>${esc(waName())}</b></div><button type="button" class="btn sm go" data-wacreate="1">${ic('wa')}Create group</button></div>`
+    :`<div class="wagroup">
+      <div class="wagh"><span class="waic">${ic('wa')}</span><div class="grow"><b>${esc(waName())}</b><small>${g.members.length+1} of 8 people. Name updates with the job number and site.</small></div><button type="button" class="btn sm" data-wapick="1">${ic('plus')}Invite people</button></div>
+      <div class="wam"><span class="wachip you"><span class="av sm" style="background:var(--lime);color:#21360A">ION</span>ION Group (you)</span>${g.members.map(i=>{const c=WA_CONTACTS[i];return `<span class="wachip">${c.k?`<span class="av sm" style="background:${ENG[c.k].c}">${c.k}</span>`:`<span class="av sm" style="background:#9AA19A">${c.name.split(' ').map(x=>x[0]).join('')}</span>`}${esc(c.name)}<button type="button" class="wx2" data-waremove="${i}" aria-label="Remove ${esc(c.name)}">${ic('x')}</button></span>`;}).join('')}</div>
+      ${n.waPick?`<div class="wapick"><div class="nbh"><b>Saved WhatsApp contacts</b><button type="button" class="linkb" data-wapick="1">Done</button></div>${WA_CONTACTS.map((c,i)=>{const on=g.members.includes(i);const full=!on&&g.members.length>=7;return `<button type="button" class="wapr ${on?'on':''}" data-waadd="${i}" ${full?'disabled':''}><span class="bx">${ic('check')}</span><span class="grow"><b>${esc(c.name)}</b><small>${esc(c.org)}, ${c.ph}</small></span></button>`;}).join('')}<small class="walim">WhatsApp business groups hold up to 8 people, including ION.</small></div>`:''}
+    </div>`}
+  </section>`;
+}
+function newSiteContactBox(){const c=NJ.newSiteContact;return `<div class="newbox">
+  <div class="nbh"><b>New site contact</b><button type="button" class="linkb" data-cancelnew="scon">Cancel</button></div>
+  <input class="in" data-nsc="name" value="${esc(c.name)}" placeholder="Name, e.g. Duty manager">
+  <div class="two"><input class="in" data-nsc="phone" value="${esc(c.phone)}" placeholder="Phone"><input class="in" data-nsc="role" value="${esc(c.role)}" placeholder="Role, e.g. Keyholder"></div>
+  <button type="button" class="btn sm go savebtn" data-savenew="scon">${ic('check')}Save site contact</button>
+</div>`;}
+function saveNew(k){
+  const n=NJ;
+  if(k==='contact'){const c=n.newContact;if(!c.name.trim()){toast('Add a name to save the contact');return;}const key=clientKey();const list=CONTACTS[key]||(CONTACTS[key]=[]);list.push({name:c.name.trim(),email:c.email.trim(),phone:c.phone.trim(),role:''});n.contact=[...n.contact,String(list.length-1)];n.newContact=null;toast(`${c.name.trim()} saved to ${n.newClient?n.newClient.name||'the new client':n.client}`);}
+  if(k==='scon'){const c=n.newSiteContact;if(!c.name.trim()){toast('Add a name to save the site contact');return;}const key=siteKey();const list=SITE_CONTACTS[key]||(SITE_CONTACTS[key]=[]);list.push({name:c.name.trim(),phone:c.phone.trim(),role:c.role.trim()});n.siteContacts=[...n.siteContacts,String(list.length-1)];n.newSiteContact=null;toast(`${c.name.trim()} saved to the site`);}
+  if(k==='asset'){const a=n.newAsset;if(!a.type){toast('Choose the asset type');return;}const key=siteKey();const list=assetsFor(key);const id='A'+(900+list.length);const months={'Weekly':0.25,'Monthly':1,'Quarterly':3,'6-monthly':6,'Annual':12,'5-yearly':60}[a.freq||'Annual'];const next=new Date(NOW);next.setMonth(next.getMonth()+Math.round(months));
+    list.push({id:a.no.trim()||id,type:a.type,loc:a.loc.trim()||'Not set',freq:a.freq||'Annual',last:new Date(NOW),next});n.assets=[...n.assets,a.no.trim()||id];n.newAsset=null;toast(`${a.type} added to the site`);}
+  render();
+}
+document.addEventListener('click',e=>{const t=e.target;if(!NJ)return;
+  const sv=t.closest('[data-savenew]');if(sv){e.stopPropagation();saveNew(sv.dataset.savenew);return;}
+  const cn=t.closest('[data-cancelnew]');if(cn&&['scon','asset'].includes(cn.dataset.cancelnew)){e.stopPropagation();if(cn.dataset.cancelnew==='scon')NJ.newSiteContact=null;else NJ.newAsset=null;render();return;}
+  if(t.closest('[data-addasset]')){e.stopPropagation();NJ.newAsset={type:'',freq:'Annual',loc:'',no:''};render();return;}
+  if(t.closest('[data-wacreate]')){e.stopPropagation();NJ.wa={members:[]};NJ.waPick=true;render();toast(`WhatsApp group "${waName()}" created`);return;}
+  if(t.closest('[data-wapick]')){e.stopPropagation();NJ.waPick=!NJ.waPick;render();return;}
+  const wa=t.closest('[data-waadd]');if(wa){e.stopPropagation();const i=+wa.dataset.waadd;const m=NJ.wa.members;if(m.includes(i))NJ.wa.members=m.filter(x=>x!==i);else if(m.length<7){m.push(i);toast(`${WA_CONTACTS[i].name} invited to the group`);}render();return;}
+  const wr=t.closest('[data-waremove]');if(wr){e.stopPropagation();NJ.wa.members=NJ.wa.members.filter(x=>x!==+wr.dataset.waremove);render();return;}
+},true);
+document.addEventListener('change',e=>{const t=e.target;if(t.dataset.asset){const id=t.dataset.asset;NJ.assets=t.checked?[...NJ.assets,id]:NJ.assets.filter(x=>x!==id);render();}});
+document.addEventListener('input',e=>{const t=e.target;if(!NJ)return;if(t.dataset.nsc){NJ.newSiteContact[t.dataset.nsc]=t.value;}if(t.dataset.na){NJ.newAsset[t.dataset.na]=t.value;}});
+document.addEventListener('keydown',e=>{if(e.key!=='Enter'||!NJ)return;const t=e.target;
+  if(t.dataset?.nco){e.preventDefault();saveNew('contact');}else if(t.dataset?.nsc){e.preventDefault();saveNew('scon');}else if(t.dataset?.na){e.preventDefault();saveNew('asset');}},true);
+
+document.addEventListener('change',e=>{const t=e.target;if(!t.closest('.sbm2'))return;
+  if(t.dataset.psel!=null){const i=+t.dataset.psel;t.checked?SB.sel.add(i):SB.sel.delete(i);renderSchedule();}
+  if(t.hasAttribute('data-pselall')){SB.sel=t.checked?new Set(SB.pending.map((_,i)=>i)):new Set();renderSchedule();}
+});
 render();
 </script>
 </body>
